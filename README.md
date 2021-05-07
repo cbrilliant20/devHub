@@ -66,10 +66,12 @@ The functionality will then be divided into two separate lists: MVP and PostMVP.
 - Use Airtable api for get and post request as well as storing new inputs.
 - Create form to recieve user data and render it as a resource card.
 - Use no less then 6 components to keep code DRY and readable.
-- Categorize posts for ease of access
+- Use CSS to style, including media query for responsiveness
+- Deploy via Netlify
 
 #### PostMVP  
 
+- Categorize posts for ease of access
 - Random resources on homepage
 - delete request for posts
 - Like button on posts
@@ -80,12 +82,12 @@ This schedule will be used to keep track of your progress throughout the week an
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
+|May 7-8| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|May 8| Project Approval | Incomplete
+|May 8| App setup, installs, get request | Incomplete
+|July 8-11| React: components, state, post request | Incomplete
+|July 12 | React: Refactor, debug, CSS  | Incomplete
+|July 16| MVP, CSS | Incomplete
 |July 17| Presentations | Incomplete
 
 ## Timeframes
