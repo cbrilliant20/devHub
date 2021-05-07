@@ -1,7 +1,15 @@
-import 
-
+import { baseURL, config } from "../services"
+import axios from "axios"
+import { useState, useEffect } from "react"
+import { useParams } from "react-router-dom"
 
 function Form() {
+  const [category, setCategory] = useState("")
+  const [title, setTitle] = useState("")
+  const [link, setLink] = useState("")
+  const [description, setDescription] = useState("")
+
+
 
 
 
