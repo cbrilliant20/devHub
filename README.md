@@ -85,10 +85,10 @@ This schedule will be used to keep track of your progress throughout the week an
 |May 7-8| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |May 8| Project Approval | Incomplete
 |May 8| App setup, installs, get request | Incomplete
-|July 8-11| React: components, state, post request | Incomplete
-|July 12 | React: Refactor, debug, CSS  | Incomplete
-|July 16| MVP, CSS | Incomplete
-|July 17| Presentations | Incomplete
+|May 8-11| React: components, state, post request | Incomplete
+|May 12 | React: Refactor, debug, CSS  | Incomplete
+|May 13| MVP, CSS | Incomplete
+|May 14| Presentations | Incomplete
 
 ## Timeframes
 
