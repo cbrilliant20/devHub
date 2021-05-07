@@ -106,7 +106,7 @@ Clear vision, app is solving a problem
 
 ### Weaknesses:
 
-Categorizing the posts may be trickier then I think
+Categorizing the posts may be trickier then I think. Layout is a bit lopsided 
 
 ### Opportunities:
 
