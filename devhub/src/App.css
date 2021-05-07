@@ -51,6 +51,15 @@ nav {
   justify-content: space-evenly;
 }
 
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  border-bottom: 1px solid black;
+}
+
 .form-container {
   grid-area: main;
   background-color: whitesmoke;

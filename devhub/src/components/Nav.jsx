@@ -4,11 +4,11 @@ function Nav() {
   return (
     <nav>
       <Link to="/">Home</Link>
-      <Link to="/">CSS</Link>
-      <Link to="/">Javascript</Link>
-      <Link to="/">React</Link>
-      <Link to="/">Design</Link>
-      <Link to="/">Misc.</Link>
+      <Link to="/css">CSS</Link>
+      <Link to="/javascript">Javascript</Link>
+      <Link to="/react">React</Link>
+      <Link to="/design">Design</Link>
+      <Link to="/misc">Misc.</Link>
     </nav>
   )
 }
