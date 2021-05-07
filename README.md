@@ -60,7 +60,7 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 
 #### MVP 
 
-- Use Airtable api for get and post request as well as storing new inputs.
+- Use Airtable api for get and post, put request as well as storing new inputs.
 - Create form to recieve user data and render it as a resource card.
 - Use no less then 6 components to keep code DRY and readable.
 - Use CSS to style, including media query for responsiveness
@@ -72,6 +72,7 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 - Random resources on homepage
 - delete request for posts
 - Like button on posts
+- Article date
 
 ## Project Schedule
 
