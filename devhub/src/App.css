@@ -1,3 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
+  display: grid;
+  grid-template-areas:
+    "head head"
+    "nav main"
+    "nav foot";
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(193, 191, 188);
+  grid-template-rows: 70px 1fr 30px;
+  grid-template-columns: 150px 1fr;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: whitesmoke;
+  border-bottom: 2px solid grey;
+  grid-area: head;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 15px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke;
+  border-top: 2px solid grey;
+  grid-area: foot;
+}
+
+nav {
+  grid-area: nav;
+  background-color: whitesmoke;
+  border-right: 2px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.form-container {
+  grid-area: main;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  width: 500px;
+  border: 2px solid grey;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.form-container h2,
+.form-container p,
+.form-container form {
+  margin: 40px 0;
+}
+
+input,
+button,
+select {
+  margin: 10px 0;
+  width: 300px;
+  height: 30px;
 }
