@@ -57,9 +57,6 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 }
 ```
 
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
 
@@ -82,7 +79,7 @@ This schedule will be used to keep track of your progress throughout the week an
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|May 7-8| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|May 7-8| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |May 8| Project Approval | Incomplete
 |May 8| App setup, installs, get request | Incomplete
 |May 8-11| React: components, state, post request | Incomplete
@@ -92,15 +89,22 @@ This schedule will be used to keep track of your progress throughout the week an
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all parts of your app.  Your estimates can then be used to evalute possibilities based on time needed and the actual time you have before the app must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add an additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Create App | H | 1hrs| TBD | TBD |
+| Install Dependecies | H | 1hrs| TBD | TBD |
+| API Setup | H | 3hrs| TBD | TBD |
+| Homepage | H | 3hrs| TBD | TBD |
+| Nav | H | 2hrs| TBD | TBD |
+| Header | H | 2hrs| TBD | TBD |
+| Footer | H | 1hrs| TBD | TBD |
+| Form React | H | 3hrs| TBD | TBD |
+| Links/Routes | H | 3hrs| TBD | TBD |
+| Post request /edit button | H | 4hrs| TBD | TBD |
+| resource card | H | 4hrs| TBD | TBD |
+| styling, css | H | 4hrs| TBD | TBD |
+| Total | H | 32hrs| TBD | TBD |
 
 ## SWOT Analysis
 
