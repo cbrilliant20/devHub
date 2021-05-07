@@ -20,38 +20,40 @@ https://whimsical.com/devhub-component-LmLCKtXbduPbZ6zeaqJCXf
 
 Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
 
-```json
-{
+```{
     "records": [
         {
-            "id": "recONRzIUTuZ5lXaF",
+            "id": "recY5PDzz1vhnlasl",
             "fields": {
-                "author": "Liz Yrineo",
-                "setup": "Why did the tomato turn red?",
-                "punchline": "Because it saw the salad dressing!"
+                "category": "HTML",
+                "description": "This is the MDN doc for HTML and there is a ton of good stuff to check out.\n",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+                "title": "HTML: The Basics"
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-05-07T04:05:33.000Z"
         },
         {
-            "id": "rec3oYZ5Tp0AIDsKe",
+            "id": "recmsfybuOJz6ZYUB",
             "fields": {
-                "author": "Rachel Moskowitz",
-                "setup": "What did the green grape say to the red grape?",
-                "punchline": "Breathe, idiot, breathe!"
+                "category": "CSS",
+                "url": "https://www.w3schools.com/css/",
+                "description": "This is the W3C tutorial for CSS and I learned so much by doing it. ",
+                "title": "W3C CSS Tutorial"
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-05-07T04:05:33.000Z"
         },
         {
-            "id": "recA34tOaoE1IVeC1",
+            "id": "recngvUktuFdNeIMO",
             "fields": {
-                "author": "Gary Grant",
-                "setup": "How do you make holy water?",
-                "punchline": "You boil the hell out of it!"
+                "category": "Javascipt",
+                "url": "https://javascript.info/",
+                "title": "Modern Javascript",
+                "description": "How it's done now. From the basics to advanced topics with simple, but detailed explanations."
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-05-07T04:05:33.000Z"
         }
     ],
-    "offset": "recA34tOaoE1IVeC1"
+    "offset": "recngvUktuFdNeIMO"
 }
 ```
 
