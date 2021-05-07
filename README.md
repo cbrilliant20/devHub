@@ -6,14 +6,15 @@ devHub
 
 ## Project Description
 
-This application uses React, HTML, and CSS to create a reasource hub for the aformentioned languages and more! Users can view and access existing resources as well as add their own to the app.
+This application uses React, HTML, and CSS to create a reasource hub for the aformentioned languages and more. Users can view and access existing resources as well as add their own to the app.
 
 ## Wireframes
 
 https://whimsical.com/devhub-UbpQSwcbqetmBi87jyF6XY
 
 ## Component Hierarchy
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+
+https://whimsical.com/devhub-component-LmLCKtXbduPbZ6zeaqJCXf
 
 ## API and Data Sample
 
@@ -59,17 +60,17 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Use Airtable api for get and post request as well as storing new inputs.
+- Create form to recieve user data and render it as a resource card.
+- Use no less then 6 components to keep code DRY and readable.
+- Categorize posts for ease of access
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Random resources on homepage
+- delete request for posts
+- Like button on posts
 
 ## Project Schedule
 
@@ -101,8 +102,16 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ### Strengths:
 
+Clear vision, app is solving a problem
+
 ### Weaknesses:
+
+Categorizing the posts may be trickier then I think
 
 ### Opportunities:
 
+Can practice manipulating posts such as "post of the day" or adding user interaction with like counter buttons. Can practice css
+
 ### Threats:
+
+May take more time than anticipated
