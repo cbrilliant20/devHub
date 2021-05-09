@@ -17,7 +17,12 @@ function Form() {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
           iusto praesentium laboriosam consectetur dolore velit!
         </p>
+
         <form>
+          <div className="form-header">
+            <h5>Add Resource:</h5>
+            <button>Submit</button>
+          </div>
           <label htmlFor="Category"></label>
           <select id="category">
             <option>Category</option>
@@ -29,15 +34,28 @@ function Form() {
           </select>
 
           <label htmlFor="Title"></label>
-          <input id="title" type="text"></input>
+          <input
+            id="title"
+            type="text"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          ></input>
 
           <label htmlFor="Link"></label>
-          <input id="link" type="text"></input>
+          <input
+            id="link"
+            type="text"
+            value={link}
+            onChange={(e) => setLink(e.target.value)}
+          ></input>
 
           <label htmlFor="Description"></label>
-          <input id="description" type="textarea"></input>
-
-          <button>Submit</button>
+          <input
+            id="description"
+            type="textarea"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          ></input>
         </form>
       </div>
     </main>

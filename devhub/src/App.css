@@ -54,6 +54,7 @@ nav {
 nav a {
   text-decoration: none;
   color: black;
+  border-bottom: 1px solid black;
 }
 
 nav a:hover {
@@ -70,24 +71,43 @@ nav a:hover {
   margin: 50px;
   width: 500px;
   border: 2px solid grey;
+  padding-bottom: 30px;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  width: 350px;
+  background-color: rgb(228, 226, 224);
+  align-items: center;
+  justify-content: center;
+  height: 225px;
+  padding: 15px;
+  border: 2px solid rgb(193, 191, 188);
+}
+
+.form-header {
+  display: flex;
   width: 300px;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
 }
 
 .form-container h2,
-.form-container p,
-.form-container form {
+.form-container p {
   margin: 40px 0;
 }
 
-input,
-button,
-select {
+input {
   margin: 10px 0;
   width: 300px;
   height: 30px;
+}
+
+select {
+  margin-bottom: 10px;
+  height: 30px;
+  width: 300px;
 }
