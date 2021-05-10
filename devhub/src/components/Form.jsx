@@ -3,11 +3,23 @@ import axios from "axios"
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 
-function Form() {
+function Form(props) {
   const [category, setCategory] = useState("")
   const [title, setTitle] = useState("")
   const [link, setLink] = useState("")
   const [description, setDescription] = useState("")
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const newResource = {
+      category,
+      title,
+      link,
+      description,
+    }
+    await axios.post(baseURL, { fields: newResource }, config)
+    props.setToggleFetch((curr) => !curr)
+  }
 
   return (
     <main>
@@ -18,13 +30,17 @@ function Form() {
           iusto praesentium laboriosam consectetur dolore velit!
         </p>
 
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="form-header">
             <h5>Add Resource:</h5>
-            <button>Submit</button>
+            <button type="submit">Submit</button>
           </div>
           <label htmlFor="Category"></label>
-          <select id="category">
+          <select
+            id="category"
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+          >
             <option>Category</option>
             <option>CSS</option>
             <option>Javascript</option>
@@ -37,6 +53,7 @@ function Form() {
           <input
             id="title"
             type="text"
+            placeholder="Title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           ></input>
@@ -45,6 +62,7 @@ function Form() {
           <input
             id="link"
             type="text"
+            placeholder="URL"
             value={link}
             onChange={(e) => setLink(e.target.value)}
           ></input>
@@ -53,6 +71,7 @@ function Form() {
           <input
             id="description"
             type="textarea"
+            placeholder="Description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           ></input>

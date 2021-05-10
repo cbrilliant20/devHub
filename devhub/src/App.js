@@ -4,6 +4,7 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Form from "./components/Form"
 import Card from "./components/Card"
+import Category from "./components/Category"
 import { useEffect, useState } from "react"
 import axios from "axios"
 import { baseURL, config } from "./services"
@@ -12,8 +13,6 @@ import { Link, Route } from "react-router-dom"
 function App() {
   const [cards, setCards] = useState([])
   const [toggleFetch, setToggleFetch] = useState(false)
-
-  // const { title, description, link } = props.card.fields
 
   useEffect(() => {
     const fetchCards = async () => {
@@ -29,14 +28,10 @@ function App() {
       <Nav />
       <Header />
       <Route path="/resource/:category">
-        <div className="card-container">
-          {cards.map((card) => (
-            <Card card={card} setToggleFetch={setToggleFetch} />
-          ))}
-        </div>
+        <Category cards={cards} />
       </Route>
       <Nav />
-      <Form />
+      <Form setToggleFetch={setToggleFetch} cards={cards} />
       <Footer />
     </div>
   )
