@@ -1,7 +1,6 @@
 import { baseURL, config } from "../services"
 import axios from "axios"
-import { useState, useEffect } from "react"
-import { useParams } from "react-router-dom"
+import { useState } from "react"
 
 function Form(props) {
   const [category, setCategory] = useState("")

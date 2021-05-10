@@ -54,12 +54,9 @@ nav {
 nav a {
   text-decoration: none;
   color: black;
-  border-bottom: 1px solid black;
 }
 
-nav a:hover {
-  border-bottom: 1px solid black;
-}
+
 
 .form-container {
   grid-area: main;
@@ -78,7 +75,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 350px;
-  background-color: rgb(228, 226, 224);
+  background-color: rgb(254, 242, 230);
   align-items: center;
   justify-content: center;
   height: 225px;

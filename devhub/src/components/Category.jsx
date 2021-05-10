@@ -8,7 +8,9 @@ function Category(props) {
       {props.cards
         .filter((category) => category.fields.category === params.category)
         .map((card) => (
-          <Card card={card} />
+          <Card card={card}
+            // setToggleFetch={setToggleFetch}
+          />
         ))}
     </div>
   )
