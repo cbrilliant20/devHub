@@ -30,10 +30,14 @@ function Edit(props) {
       url,
       description,
     }
-    const specificURL = `${baseURL}/${params.id}`
-    await axios.put(specificURL, { fields: newResource }, config)
+    if (params.id) {
+      const specificURL = `${baseURL}/${params.id}`
+      await axios.put(specificURL, { fields: newResource }, config)
+    } else {
+      await axios.post(baseURL, { fields: newResource }, config)
+    }
 
-    // props.setToggleFetch((curr) => !curr)
+    props.setToggleFetch((curr) => !curr)
   }
 
   const deleteResource = async () => {
