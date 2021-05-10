@@ -8,19 +8,6 @@ function Form(props) {
   const [title, setTitle] = useState("")
   const [url, setURL] = useState("")
   const [description, setDescription] = useState("")
-  const params = useParams()
-
-  // useEffect(() => {
-  //   if (params.id && props.cards.length) {
-  //     const card = props.cards.find((card) => card.id === params.id)
-  //     if (card) {
-  //       setCategory(card.fields.category)
-  //       setTitle(card.fields.title)
-  //       setLink(card.fields.link)
-  //       setDescription(card.fields.description)
-  //     }
-  //   }
-  // }, [props.cards, params.id])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -30,12 +17,7 @@ function Form(props) {
       url,
       description,
     }
-    // if (params.id) {
-    //   const specificURL = `${baseURL}/${params.id}`
-    //   await axios.put(specificURL, { fields: newResource }, config)
-    // } else {
     await axios.post(baseURL, { fields: newResource }, config)
-    // }
     props.setToggleFetch((curr) => !curr)
   }
 

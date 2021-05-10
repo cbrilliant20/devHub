@@ -28,7 +28,7 @@ function App() {
       <Header />
       <Switch>
         <Route path="/resource/:category">
-          <Category cards={cards} />
+          <Category cards={cards} setToggleFetch={setToggleFetch} />
         </Route>
         <Form setToggleFetch={setToggleFetch} cards={cards} />
       </Switch>
