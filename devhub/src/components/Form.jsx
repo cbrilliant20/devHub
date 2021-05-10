@@ -6,18 +6,36 @@ import { useParams } from "react-router-dom"
 function Form(props) {
   const [category, setCategory] = useState("")
   const [title, setTitle] = useState("")
-  const [link, setLink] = useState("")
+  const [url, setURL] = useState("")
   const [description, setDescription] = useState("")
+  const params = useParams()
+
+  // useEffect(() => {
+  //   if (params.id && props.cards.length) {
+  //     const card = props.cards.find((card) => card.id === params.id)
+  //     if (card) {
+  //       setCategory(card.fields.category)
+  //       setTitle(card.fields.title)
+  //       setLink(card.fields.link)
+  //       setDescription(card.fields.description)
+  //     }
+  //   }
+  // }, [props.cards, params.id])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     const newResource = {
       category,
       title,
-      link,
+      url,
       description,
     }
+    // if (params.id) {
+    //   const specificURL = `${baseURL}/${params.id}`
+    //   await axios.put(specificURL, { fields: newResource }, config)
+    // } else {
     await axios.post(baseURL, { fields: newResource }, config)
+    // }
     props.setToggleFetch((curr) => !curr)
   }
 
@@ -63,8 +81,8 @@ function Form(props) {
             id="link"
             type="text"
             placeholder="URL"
-            value={link}
-            onChange={(e) => setLink(e.target.value)}
+            value={url}
+            onChange={(e) => setURL(e.target.value)}
           ></input>
 
           <label htmlFor="Description"></label>
