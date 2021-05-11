@@ -2,6 +2,7 @@ import axios from "axios"
 import { baseURL, config } from "../services"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import { useHistory, Link } from "react-router-dom"
 
 function Edit(props) {
   const [category, setCategory] = useState("")
@@ -41,6 +42,12 @@ function Edit(props) {
     const specificURL = `${baseURL}/${params.id}`
     await axios.delete(specificURL, config)
     props.setToggleFetch((curr) => !curr)
+    toPreviousPage()
+  }
+
+  let history = useHistory()
+  const toPreviousPage = () => {
+    history.goBack()
   }
 
   return (
@@ -48,7 +55,9 @@ function Edit(props) {
       <form onSubmit={handleSubmit}>
         <div className="form-header">
           <h5>Add Resource:</h5>
-          <button type="submit">Save</button>
+          <button onClick={toPreviousPage} type="submit">
+            Save
+          </button>
           <button onClick={deleteResource}>Delete</button>
         </div>
         <label htmlFor="Category"></label>
