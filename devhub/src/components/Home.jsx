@@ -24,10 +24,10 @@ function Home(props) {
   return (
     <main>
       <div className="home-container">
-        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Welcome to devHub</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-          iusto praesentium laboriosam consectetur dolore velit!
+          devHub is community resource to store and organize the many resources a new
+          developer uses. Please add your favorite resources below.
         </p>
 
         <form className="home-form" onSubmit={handleSubmit}>
