@@ -8,7 +8,7 @@ import Edit from "./components/Edit"
 import { useEffect, useState } from "react"
 import axios from "axios"
 import { baseURL, config } from "./services"
-import { Link, Route, Switch } from "react-router-dom"
+import { Route, Switch } from "react-router-dom"
 
 function App() {
   const [cards, setCards] = useState([])
@@ -28,12 +28,14 @@ function App() {
       <Nav />
       <Header />
       <Switch>
-        <Route path="/resource/:category">
+        <Route exact path="/resource/:category">
           <Category cards={cards} setToggleFetch={setToggleFetch} />
         </Route>
-        <Form setToggleFetch={setToggleFetch} cards={cards} />
-        <Route path="/resource/:category/edit/:id">
-          <Edit></Edit>
+        <Route exact path="/">
+          <Form setToggleFetch={setToggleFetch} cards={cards} />
+        </Route>
+        <Route exact path="/resource/:category/edit/:id">
+          <Edit cards={cards} setToggleFetch={setToggleFetch}></Edit>
         </Route>
       </Switch>
 

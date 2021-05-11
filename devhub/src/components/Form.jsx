@@ -22,7 +22,7 @@ function Form(props) {
 
   return (
     <main>
-      <div className="form-container">
+      <div className="edit-form-container">
         <h2>Lorem ipsum dolor sit amet.</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia,

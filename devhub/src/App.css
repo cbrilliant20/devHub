@@ -17,12 +17,6 @@
   grid-template-columns: 150px 1fr;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 header {
   background-color: whitesmoke;
   border-bottom: 2px solid grey;
@@ -56,55 +50,6 @@ nav a {
   color: black;
 }
 
-
-
-.form-container {
+Switch {
   grid-area: main;
-  background-color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 50px;
-  width: 500px;
-  border: 2px solid grey;
-  padding-bottom: 30px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  background-color: rgb(254, 242, 230);
-  align-items: center;
-  justify-content: center;
-  height: 225px;
-  padding: 15px;
-  border: 2px solid rgb(193, 191, 188);
-}
-
-.form-header {
-  display: flex;
-  width: 300px;
-  height: 40px;
-  justify-content: space-between;
-  align-items: center;
-  background-color: whitesmoke;
-}
-
-.form-container h2,
-.form-container p {
-  margin: 40px 0;
-}
-
-input {
-  margin: 10px 0;
-  width: 300px;
-  height: 30px;
-}
-
-select {
-  margin-bottom: 10px;
-  height: 30px;
-  width: 300px;
 }

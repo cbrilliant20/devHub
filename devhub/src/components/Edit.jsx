@@ -13,6 +13,7 @@ function Edit(props) {
   useEffect(() => {
     if (params.id && props.cards.length) {
       const card = props.cards.find((card) => card.id === params.id)
+
       if (card) {
         setCategory(card.fields.category)
         setTitle(card.fields.title)
@@ -32,16 +33,8 @@ function Edit(props) {
     }
     const specificURL = `${baseURL}/${params.id}`
     await axios.put(specificURL, { fields: newResource }, config)
-    // else {
-    //   await axios.post(baseURL, { fields: newResource }, config)
-    // }
 
     props.setToggleFetch((curr) => !curr)
-  }
-
-  const deleteResource = async () => {
-    const specificURL = `${baseURL}/${props.card.id}`
-    await axios.delete(specificURL, config)
   }
 
   return (
@@ -50,7 +43,6 @@ function Edit(props) {
         <div className="form-header">
           <h5>Add Resource:</h5>
           <button type="submit">Submit</button>
-          <button onClick={deleteResource}>Delete</button>
         </div>
         <label htmlFor="Category"></label>
         <select
