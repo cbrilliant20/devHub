@@ -3,12 +3,6 @@ import axios from "axios"
 import { baseURL, config } from "../services"
 
 function Card(props) {
-  const deleteResource = async () => {
-    const specificURL = `${baseURL}/${props.card.id}`
-    await axios.delete(specificURL, config)
-    props.setToggleFetch((curr) => !curr)
-  }
-
   return (
     <div className="card-container">
       {/* <a href={props.card.field.link}></a> */}
@@ -20,7 +14,6 @@ function Card(props) {
       >
         <button>Edit</button>
       </Link>
-      <button onClick={deleteResource}>Delete</button>
     </div>
   )
 }

@@ -37,12 +37,19 @@ function Edit(props) {
     props.setToggleFetch((curr) => !curr)
   }
 
+  const deleteResource = async () => {
+    const specificURL = `${baseURL}/${params.id}`
+    await axios.delete(specificURL, config)
+    props.setToggleFetch((curr) => !curr)
+  }
+
   return (
     <div className="edit-container">
       <form onSubmit={handleSubmit}>
         <div className="form-header">
           <h5>Add Resource:</h5>
-          <button type="submit">Submit</button>
+          <button type="submit">Save</button>
+          <button onClick={deleteResource}>Delete</button>
         </div>
         <label htmlFor="Category"></label>
         <select
