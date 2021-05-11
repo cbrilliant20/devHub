@@ -1,8 +1,9 @@
 import { baseURL, config } from "../services"
 import axios from "axios"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
-function Form(props) {
+function Home(props) {
   const [category, setCategory] = useState("")
   const [title, setTitle] = useState("")
   const [url, setURL] = useState("")
@@ -22,17 +23,19 @@ function Form(props) {
 
   return (
     <main>
-      <div className="edit-form-container">
+      <div className="home-container">
         <h2>Lorem ipsum dolor sit amet.</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
           iusto praesentium laboriosam consectetur dolore velit!
         </p>
 
-        <form onSubmit={handleSubmit}>
+        <form className="home-form" onSubmit={handleSubmit}>
           <div className="form-header">
             <h5>Add Resource:</h5>
-            <button type="submit">Submit</button>
+            <Link defer to={`/resource/${category}`}>
+              <button type="submit">Submit</button>
+            </Link>
           </div>
           <label htmlFor="Category"></label>
           <select
@@ -45,7 +48,7 @@ function Form(props) {
             <option>Javascript</option>
             <option>React</option>
             <option>Design</option>
-            <option>Misc.</option>
+            <option>Misc</option>
           </select>
 
           <label htmlFor="Title"></label>
@@ -80,4 +83,4 @@ function Form(props) {
   )
 }
 
-export default Form
+export default Home

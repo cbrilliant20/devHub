@@ -12,34 +12,34 @@
     "nav foot";
   width: 100vw;
   height: 100vh;
-  background-color: rgb(193, 191, 188);
+  background-color: #6e8da4;
+  background-image: linear-gradient(135deg, #6e8da4 0%, #475e72 100%);
+  color: rgb(235, 209, 175);
   grid-template-rows: 70px 1fr 30px;
   grid-template-columns: 150px 1fr;
 }
 
 header {
-  background-color: whitesmoke;
-  border-bottom: 2px solid grey;
   grid-area: head;
   display: flex;
   justify-content: left;
   align-items: center;
-  padding-left: 15px;
+  border-bottom: 2px solid rgb(164, 164, 164);
+  padding-left: 10px;
+  letter-spacing: 4px;
 }
 
 footer {
+  grid-area: foot;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: whitesmoke;
-  border-top: 2px solid grey;
-  grid-area: foot;
+  border-top: 2px solid rgb(164, 164, 164);
 }
 
 nav {
   grid-area: nav;
-  background-color: whitesmoke;
-  border-right: 2px solid grey;
+  border-right: 2px solid rgb(164, 164, 164);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -47,7 +47,5 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: rgb(235, 209, 175);
 }
-
-

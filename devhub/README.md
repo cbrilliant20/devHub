@@ -91,17 +91,17 @@ This schedule will be used to keep track of your progress throughout the week an
 
 | Component                 | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Create App                |    H     |      2hrs      |      TBD      |     TBD     |
-| Install Dependecies       |    H     |      2hrs      |      TBD      |     TBD     |
-| API Setup                 |    H     |      3hrs      |      TBD      |     TBD     |
-| Homepage                  |    H     |      3hrs      |      TBD      |     TBD     |
-| Nav                       |    H     |      2hrs      |      TBD      |     TBD     |
-| Header                    |    H     |      3hrs      |      TBD      |     TBD     |
-| Footer                    |    H     |      2hrs      |      TBD      |     TBD     |
-| Form React                |    H     |      3hrs      |      TBD      |     TBD     |
-| Links/Routes              |    H     |      3hrs      |      TBD      |     TBD     |
-| Post request /edit button |    H     |      4hrs      |      TBD      |     TBD     |
-| resource card             |    H     |      4hrs      |      TBD      |     TBD     |
+| Create App                |    H     |      2hrs      |      1HR      |     TBD     |
+| Install Dependecies       |    H     |      2hrs      |      1HR      |     TBD     |
+| API Setup                 |    H     |      3hrs      |      3HR      |     TBD     |
+| Homepage                  |    H     |      3hrs      |      1HR      |     TBD     |
+| Nav                       |    H     |      2hrs      |      1HR      |     TBD     |
+| Header                    |    H     |      3hrs      |      1HR      |     TBD     |
+| Footer                    |    H     |      2hrs      |      1HR      |     TBD     |
+| Form React                |    H     |      3hrs      |      4HR      |     TBD     |
+| Links/Routes              |    H     |      3hrs      |      5HR      |     TBD     |
+| Post request /edit button |    H     |      4hrs      |      3HR      |     TBD     |
+| resource card             |    H     |      4hrs      |      3HR      |     TBD     |
 | styling, css              |    H     |      6hrs      |      TBD      |     TBD     |
 | Total                     |    H     |     38hrs      |      TBD      |     TBD     |
 

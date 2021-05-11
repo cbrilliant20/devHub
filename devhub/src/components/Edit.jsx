@@ -71,7 +71,7 @@ function Edit(props) {
           <option>Javascript</option>
           <option>React</option>
           <option>Design</option>
-          <option>Misc.</option>
+          <option>Misc</option>
         </select>
 
         <label htmlFor="Title"></label>

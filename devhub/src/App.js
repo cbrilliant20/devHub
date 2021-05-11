@@ -2,7 +2,7 @@ import "./App.css"
 import Nav from "./components/Nav"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
-import Form from "./components/Form"
+import Home from "./components/Home"
 import Category from "./components/Category"
 import Edit from "./components/Edit"
 import { useEffect, useState } from "react"
@@ -32,7 +32,7 @@ function App() {
           <Category cards={cards} setToggleFetch={setToggleFetch} />
         </Route>
         <Route exact path="/">
-          <Form setToggleFetch={setToggleFetch} cards={cards} />
+          <Home setToggleFetch={setToggleFetch} cards={cards} />
         </Route>
         <Route exact path="/resource/:category/edit/:id">
           <Edit cards={cards} setToggleFetch={setToggleFetch}></Edit>
