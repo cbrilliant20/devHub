@@ -34,9 +34,9 @@ function Home(props) {
         <form className="home-form" onSubmit={handleSubmit}>
           <div className="form-header">
             <h5>Add Resource:</h5>
-            <Link defer to={`/resource/${category}`}>
-              <button type="submit">Submit</button>
-            </Link>
+            {/* <Link defer to={`/resource/${category}`}> */}
+            <button type="submit">Submit</button>
+            {/* </Link> */}
           </div>
           <label htmlFor="Category"></label>
           <select
