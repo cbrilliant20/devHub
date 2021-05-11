@@ -75,14 +75,14 @@ function Edit(props) {
           onChange={(e) => setTitle(e.target.value)}
         ></input>
 
-        {/* <label htmlFor="Link"></label>
+        <label htmlFor="Link"></label>
         <input
           id="link"
           type="text"
           placeholder="URL"
           value={url}
           onChange={(e) => setURL(e.target.value)}
-        ></input> */}
+        ></input>
 
         <label htmlFor="Description"></label>
         <input

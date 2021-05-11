@@ -12,7 +12,7 @@ function Card(props) {
       <h4>{props.card.fields.title}</h4>
       <h4>{props.card.fields.description}</h4>
       <h4>{props.card.fields.link}</h4>
-      <Link to={`resource/${props.card.fields.category}/edit/${props.card.id}`}>
+      <Link to={`/resource/${props.card.fields.category}/edit/${props.card.id}`}>
         <button>Edit</button>
       </Link>
     </div>
