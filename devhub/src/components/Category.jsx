@@ -7,11 +7,14 @@ function Category(props) {
     <div className="card-container">
       {props.cards
         .filter((category) => category.fields.category === params.category)
-        .map((card) => (
-          <Card card={card}
+        .map((card, index) => (
+          <Card
+            key={index}
+            card={card}
             // setToggleFetch={setToggleFetch}
           />
         ))}
+
     </div>
   )
 }

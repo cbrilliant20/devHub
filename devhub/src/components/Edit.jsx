@@ -30,12 +30,11 @@ function Edit(props) {
       url,
       description,
     }
-    if (params.id) {
-      const specificURL = `${baseURL}/${params.id}`
-      await axios.put(specificURL, { fields: newResource }, config)
-    } else {
-      await axios.post(baseURL, { fields: newResource }, config)
-    }
+    const specificURL = `${baseURL}/${params.id}`
+    await axios.put(specificURL, { fields: newResource }, config)
+    // else {
+    //   await axios.post(baseURL, { fields: newResource }, config)
+    // }
 
     props.setToggleFetch((curr) => !curr)
   }
@@ -76,14 +75,14 @@ function Edit(props) {
           onChange={(e) => setTitle(e.target.value)}
         ></input>
 
-        <label htmlFor="Link"></label>
+        {/* <label htmlFor="Link"></label>
         <input
           id="link"
           type="text"
           placeholder="URL"
           value={url}
           onChange={(e) => setURL(e.target.value)}
-        ></input>
+        ></input> */}
 
         <label htmlFor="Description"></label>
         <input

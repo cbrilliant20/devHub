@@ -32,10 +32,11 @@ function App() {
           <Category cards={cards} setToggleFetch={setToggleFetch} />
         </Route>
         <Form setToggleFetch={setToggleFetch} cards={cards} />
-        <Route path="/edit/:id">
-          <Edit cards={cards} setToggleFetch={setToggleFetch}></Edit>
+        <Route path="/:category/edit/:id">
+          <Edit></Edit>
         </Route>
       </Switch>
+
       <Nav />
       <Footer />
     </div>
