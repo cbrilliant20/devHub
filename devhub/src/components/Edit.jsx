@@ -52,13 +52,15 @@ function Edit(props) {
 
   return (
     <div className="edit-container">
-      <form onSubmit={handleSubmit}>
+      <form className="edit-form" onSubmit={handleSubmit}>
         <div className="form-header">
-          <h5>Add Resource:</h5>
-          <button onClick={toPreviousPage} type="submit">
-            Save
-          </button>
-          <button onClick={deleteResource}>Delete</button>
+          <h5>Edit Resource:</h5>
+          <div className="edit-buttons">
+            <button onClick={toPreviousPage} type="submit">
+              Save
+            </button>
+            <button onClick={deleteResource}>Delete</button>
+          </div>
         </div>
         <label htmlFor="Category"></label>
         <select

@@ -26,8 +26,9 @@ function Home(props) {
       <div className="home-container">
         <h2>Welcome to devHub</h2>
         <p>
-          devHub is community resource to store and organize the many resources a new
-          developer uses. Please add your favorite resources below.
+          devHub is community project used to store and organize the many
+          resources a new developer uses. Please add your favorite resources
+          below.
         </p>
 
         <form className="home-form" onSubmit={handleSubmit}>
