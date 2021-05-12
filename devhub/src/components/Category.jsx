@@ -10,7 +10,7 @@ function Category(props) {
 
   return (
     <div className="category-container">
-      <h2>Resources</h2>
+      <h2>{params.category} Resources</h2>
       {props.cards
         .filter((category) => category.fields.category === params.category)
         .map((card, index) => (

@@ -131,7 +131,10 @@ button {
 }
 
 button:hover {
-  filter: brightness(115%);
+  background-color: #6e8da4;
+  color: rgb(235, 209, 175);
+  filter: brightness(120%);
+  box-shadow: 0px 15px 10px -16px #6e8da4;
 }
 
 select,
@@ -214,7 +217,6 @@ input::placeholder {
   justify-content: center;
   height: 100%;
   width: 100%;
-  overflow-y: scroll;
   overflow-y: scroll;
 }
 
