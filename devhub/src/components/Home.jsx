@@ -1,13 +1,14 @@
 import { baseURL, config } from "../services"
 import axios from "axios"
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 
 function Home(props) {
   const [category, setCategory] = useState("")
   const [title, setTitle] = useState("")
   const [url, setURL] = useState("")
   const [description, setDescription] = useState("")
+  const history = useHistory()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -19,6 +20,7 @@ function Home(props) {
     }
     await axios.post(baseURL, { fields: newResource }, config)
     props.setToggleFetch((curr) => !curr)
+    history.push(`/resource/${category}`)
   }
 
   return (

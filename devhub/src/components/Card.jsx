@@ -4,8 +4,8 @@ import { baseURL, config } from "../services"
 
 function Card(props) {
   return (
-    <div className="card-container">
-      <h2>{props.card.fields.category} Resources</h2>
+    <div className="card-card-container">
+      
       <div className="card">
         {/* <a href={props.card.field.link}></a> */}
         <h4>{props.card.fields.title}</h4>
