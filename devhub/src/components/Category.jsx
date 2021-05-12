@@ -1,8 +1,6 @@
 import { useParams } from "react-router"
 import Card from "./Card"
-import { useState, useEffect } from "react"
-import axios from "axios"
-import { baseURL, config } from "../services"
+import { useState } from "react"
 
 function Category(props) {
   const [toggleFetch, setToggleFetch] = useState([])

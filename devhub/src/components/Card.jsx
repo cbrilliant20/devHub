@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom"
-import axios from "axios"
-import { baseURL, config } from "../services"
 
 function Card(props) {
   return (

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Burger from "./Burger.jsx"
 
 function Nav() {
   return (
@@ -9,6 +10,7 @@ function Nav() {
       <Link to="/resource/React">React</Link>
       <Link to="/resource/Design">Design</Link>
       <Link to="/resource/Misc">Misc.</Link>
+      <Burger></Burger>
     </nav>
   )
 }

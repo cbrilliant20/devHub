@@ -2,7 +2,7 @@ import axios from "axios"
 import { baseURL, config } from "../services"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { useHistory, Link } from "react-router-dom"
+import { useHistory } from "react-router-dom"
 
 function Edit(props) {
   const [category, setCategory] = useState("")
