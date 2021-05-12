@@ -34,6 +34,10 @@ header {
   letter-spacing: 4px;
 }
 
+header a {
+  text-decoration: none;
+  color: inherit;
+}
 footer {
   grid-area: foot;
   display: flex;
@@ -300,6 +304,7 @@ footer a {
       "foot";
     grid-template-rows: 70px 1fr 30px;
     grid-template-columns: 1fr;
+    overflow-y: hidden;
   }
 
   nav {
