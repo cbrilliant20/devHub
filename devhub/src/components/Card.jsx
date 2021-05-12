@@ -6,13 +6,15 @@ function Card(props) {
   return (
     <div className="card-container">
       <div className="card">
-        {/* <a href={props.card.field.link}></a> */}
-        <h3>{props.card.fields.title}</h3>
-        <h4>{props.card.fields.description}</h4>
-        {/* <button>
-          <a href={props.cards.fields.url}>Go To</a>
-        </button> */}
-        <h4></h4>
+        <div className="edit-content">
+          <h3>
+            <a href={props.card.fields.url} target="_blank">
+              {props.card.fields.title}
+            </a>
+          </h3>
+          <h4>{props.card.fields.description}</h4>
+          <h4></h4>
+        </div>
         <Link
           to={`/resource/${props.card.fields.category}/edit/${props.card.id}`}
         >
