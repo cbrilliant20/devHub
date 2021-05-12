@@ -13,8 +13,12 @@ function Burger() {
 
   return (
     <div className="burger-container">
-      <div className="burger-icon">
-        <FontAwesomeIcon icon={faBars} onClick={() => setShowMenu(!showMenu)} />
+      <div>
+        <FontAwesomeIcon
+          className="svg-inline--fa fa-bars fa-w-20 burger-icon"
+          icon={faBars}
+          onClick={() => setShowMenu(!showMenu)}
+        />
       </div>
       {nav}
     </div>

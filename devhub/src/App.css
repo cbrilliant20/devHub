@@ -37,7 +37,7 @@ header {
 footer {
   grid-area: foot;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   border-top: 2px solid rgb(164, 164, 164);
 }
@@ -277,6 +277,20 @@ input::placeholder {
   display: none;
 }
 
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.social-icon {
+  margin: 0 10px;
+  text-decoration: none;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media only screen and (max-width: 900px) {
   .App {
     display: grid;
@@ -297,8 +311,9 @@ input::placeholder {
     flex-direction: column;
     top: 0;
     right: 0;
-    padding: 20px;
+    padding: 20px 30px 20px 20px;
     height: 100vh;
+    z-index: 100;
     /* background-color: #475e72; */
   }
   .burger-nav {
@@ -306,12 +321,16 @@ input::placeholder {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #475e72;
-    height: 100%;
+    background-color: #2d3c49;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    opacity: 95%;
+    height: 87.5%;
     position: fixed;
     grid-area: main;
     top: 70px;
     right: 0;
+    width: 175px;
   }
   .burger-nav a {
     text-decoration: none;
@@ -322,5 +341,33 @@ input::placeholder {
   .burger-nav a:hover {
     border-bottom: 1px solid rgb(254, 207, 142);
     color: rgb(254, 207, 142);
+  }
+
+  .burger-icon {
+    height: 30px;
+  }
+
+  .card-container {
+    width: 90%;
+  }
+  .card {
+    min-height: 50px;
+  }
+  .home-container h2,
+  .home-container p,
+  .home-form,
+  .edit-form {
+    margin: 20px;
+    width: 90%;
+    text-align: left;
+  }
+
+  .edit-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .edit-buttons button {
+    margin: 5px 0;
   }
 }
