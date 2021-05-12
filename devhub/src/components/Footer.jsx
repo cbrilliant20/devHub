@@ -1,10 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faCopyright } from "@fortawesome/free-regular-svg-icons"
 
 function Footer() {
   return (
     <footer>
-      <p>Cameron Brilliant</p>
+      <div className="copyright">
+        <FontAwesomeIcon className="copyright-icon" icon={faCopyright} />
+        <p>Cameron Brilliant</p>
+      </div>
       <div className="socials">
         <a href="https://github.com/cbrilliant20" target="_blank">
           <FontAwesomeIcon className="social-icon" icon={faGithub} />
@@ -16,7 +20,7 @@ function Footer() {
           <FontAwesomeIcon className="social-icon" icon={faLinkedin} />
         </a>
       </div>
-      <p>2021</p>
+      {/* <p>2021</p> */}
     </footer>
   )
 }
