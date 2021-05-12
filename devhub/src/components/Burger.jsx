@@ -1,15 +1,23 @@
 import { useState } from "react"
-import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
+import BurgerNav from "./BurgerNav"
 
 function Burger() {
-  const [open, setOpen] = useState(false)
+  const [showMenu, setShowMenu] = useState(false)
+
+  let nav
+  if (showMenu) {
+    nav = <BurgerNav />
+  }
 
   return (
-    <Burger className="burger" open={open} onClick={() => setOpen(!open)}>
-      <div></div>
-      <div></div>
-      <div></div>
-    </Burger>
+    <div className="burger-container">
+      <div className="burger-icon">
+        <FontAwesomeIcon icon={faBars} onClick={() => setShowMenu(!showMenu)} />
+      </div>
+      {nav}
+    </div>
   )
 }
 

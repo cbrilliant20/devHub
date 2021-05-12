@@ -5,6 +5,7 @@ import Footer from "./components/Footer"
 import Home from "./components/Home"
 import Category from "./components/Category"
 import Edit from "./components/Edit"
+import Burger from "./components/Burger"
 import { useEffect, useState } from "react"
 import axios from "axios"
 import { baseURL, config } from "./services"
@@ -38,7 +39,6 @@ function App() {
           <Edit cards={cards} setToggleFetch={setToggleFetch}></Edit>
         </Route>
       </Switch>
-
       <Nav />
       <Footer />
     </div>
