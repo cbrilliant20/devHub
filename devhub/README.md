@@ -2,7 +2,7 @@
 
 ## Project Name
 
-devHub 
+devHub
 ** devhub20.netlify.app **
 
 ## Project Description
@@ -81,11 +81,11 @@ This schedule will be used to keep track of your progress throughout the week an
 | Day      | Deliverable                                        | Status     |
 | -------- | -------------------------------------------------- | ---------- |
 | May 7-8  | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
-| May 8    | Project Approval                                   | Incomplete |
-| May 8    | App setup, installs, get request                   | Incomplete |
-| May 8-11 | React: components, state, post request             | Incomplete |
-| May 12   | React: Refactor, debug, CSS                        | Incomplete |
-| May 13   | MVP, CSS                                           | Incomplete |
+| May 8    | Project Approval                                   | Complete   |
+| May 8    | App setup, installs, get request                   | Complete   |
+| May 8-11 | React: components, state, post request             | Complete   |
+| May 12   | React: Refactor, debug, CSS                        | Complete   |
+| May 13   | MVP, CSS                                           | Complete   |
 | May 14   | Presentations                                      | Incomplete |
 
 ## Timeframes
