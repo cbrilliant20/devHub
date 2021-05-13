@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Like from "./Like"
 
 function Card(props) {
   return (
@@ -18,6 +19,7 @@ function Card(props) {
         >
           <button>Edit</button>
         </Link>
+        <Like />
       </div>
     </div>
   )
