@@ -37,8 +37,9 @@ function Like() {
   if (likes > 1) {
     return (
       <div>
-        <button onClick={addLike} style={{ ...style }}>
+        <button className="like-counter" onClick={addLike} style={{ ...style }}>
           <FontAwesomeIcon icon={faThumbsUp}>{likes}</FontAwesomeIcon>
+          <p>{likes}</p>
         </button>
       </div>
     )

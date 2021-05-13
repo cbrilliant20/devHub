@@ -14,12 +14,14 @@ function Card(props) {
           <h4>{props.card.fields.description}</h4>
           <h4></h4>
         </div>
-        <Link
-          to={`/resource/${props.card.fields.category}/edit/${props.card.id}`}
-        >
-          <button>Edit</button>
-        </Link>
-        <Like />
+        <div className="card-buttons">
+          <Link
+            to={`/resource/${props.card.fields.category}/edit/${props.card.id}`}
+          >
+            <button>Edit</button>
+          </Link>
+          <Like />
+        </div>
       </div>
     </div>
   )
