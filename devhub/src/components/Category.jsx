@@ -1,5 +1,5 @@
-import { useParams } from "react-router"
 import Card from "./Card"
+import { useParams } from "react-router"
 import { useState } from "react"
 
 function Category(props) {
