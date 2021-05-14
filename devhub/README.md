@@ -95,15 +95,15 @@ This schedule will be used to keep track of your progress throughout the week an
 | Create App                |    H     |      2hrs      |      1HR      |     TBD     |
 | Install Dependecies       |    H     |      2hrs      |      1HR      |     TBD     |
 | API Setup                 |    H     |      3hrs      |      3HR      |     TBD     |
-| Homepage                  |    H     |      3hrs      |      1HR      |     TBD     |
-| Nav                       |    H     |      2hrs      |      1HR      |     TBD     |
-| Header                    |    H     |      3hrs      |      1HR      |     TBD     |
-| Footer                    |    H     |      2hrs      |      1HR      |     TBD     |
+| Homepage                  |    H     |      3hrs      |      2HR      |     TBD     |
+| Nav                       |    H     |      2hrs      |      2HR      |     TBD     |
+| Header                    |    H     |      3hrs      |      2HR      |     TBD     |
+| Footer                    |    H     |      2hrs      |      2HR      |     TBD     |
 | Form React                |    H     |      3hrs      |      4HR      |     TBD     |
 | Links/Routes              |    H     |      3hrs      |      5HR      |     TBD     |
 | Post request /edit button |    H     |      4hrs      |      3HR      |     TBD     |
 | resource card             |    H     |      4hrs      |      3HR      |     TBD     |
-| styling, css              |    H     |      6hrs      |      TBD      |     TBD     |
+| styling, css              |    H     |      6hrs      |      6BD      |     TBD     |
 | Total                     |    H     |     38hrs      |      TBD      |     TBD     |
 
 ## SWOT Analysis
