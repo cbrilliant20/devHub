@@ -28,17 +28,15 @@ function Home(props) {
       <div className="home-container">
         <h2>Welcome to devHub</h2>
         <p>
-          devHub is community project used to store and organize the many
-          resources a new developer uses. Please add your favorite resources
-          below.
+          devHub is a free tool to keep track of the evergrowing list of
+          resources a software developer finds. Please add your favorite
+          resources below.
         </p>
 
         <form className="home-form" onSubmit={handleSubmit}>
           <div className="form-header">
             <h5>Add Resource:</h5>
-            {/* <Link defer to={`/resource/${category}`}> */}
             <button type="submit">Submit</button>
-            {/* </Link> */}
           </div>
           <label htmlFor="Category"></label>
           <select

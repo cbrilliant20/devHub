@@ -20,7 +20,6 @@ function Footer() {
           <FontAwesomeIcon className="social-icon" icon={faLinkedin} />
         </a>
       </div>
-      {/* <p>2021</p> */}
     </footer>
   )
 }
